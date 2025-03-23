@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Familjen Grotesk, sans-serif;
+}
+.Logo{
+  /* margin: auto;
+  padding: 20px; */
+      /* display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; */
+/* } */
+.Header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+
+}
+.Navigation{
+  list-style-type: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #000000;
+      width: 415px;
+      height: 56px;
+      border-radius: 80px;
+  font-family: familjen Grotesk, sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  /* letter-spacing: -0.01em; */
+  font-weight: 400;
+  gap: 16px;
+
+}
+li a{
+  text-decoration: none;
+  color: #C4C4C4;
+  font-family: familjen Grotesk, sans-serif;
+  padding: 16px;
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:  88px;
+  height: 46px;
+  border-radius: 48px;
+
+
+}
+/* #Main{
+  color: #000000;
+  background-color: white;
+  border-radius: 48px;
+  width: 90px;
+} */
+li a:hover{
+  color: #000000;
+  background-color: white;
+  border-radius: 48px;
+}
+li a.active{
+  color: #000000;
+  background-color: white;
+  border-radius: 48px;
+}
+p{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background-color: #C4C4C4;
+  border-radius: 100px;
+width: 20px;
+padding: 5px;
+height: 20px;
+font-weight: 600;
+font-size: 11px;
+bottom: 30px;
+right: 10px;
+
+
+} */

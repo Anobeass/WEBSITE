@@ -1,0 +1,221 @@
+/* تأثير التلاشي */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* تأثير الانزلاق من الأسفل */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* تأثير النبض */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* تأثير الدوران */
+@keyframes rotateIn {
+  from {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+/* تأثير التلاشي عند التمرير */
+@keyframes fadeInOnScroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تأثير التكبير والتلاشي */
+@keyframes zoomInFade {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* تأثير الاهتزاز عند التمرير */
+@keyframes hoverShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* تأثير التلاشي والتكبير */
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* تأثير الانزلاق من اليمين */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* تأثير الطفو */
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* تطبيق الأنيميشن */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 1s ease-out;
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+.rotate-in {
+  animation: rotateIn 1.5s ease-in-out;
+}
+
+.scroll-fade-in {
+  opacity: 0;
+  animation: fadeInOnScroll 1s ease-in-out forwards;
+}
+
+.card-element {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeScale 0.8s ease-out forwards;
+  transition: transform 0.3s ease;
+}
+
+.card-element:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.ex1 {
+  opacity: 0;
+  animation: fadeScale 0.8s ease-out forwards;
+  animation-delay: calc(var(--animation-order) * 0.2s);
+}
+
+.Auto-Layout-Vertical {
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+.bttn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bttn:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+/* تأخير تدريجي للعناصر */
+.scroll-fade-in {
+  opacity: 0;
+  animation: fadeScale 0.8s ease-out forwards;
+  animation-delay: calc(var(--animation-order) * 0.2s);
+}
+
+/* تأثير الظهور عند التمرير */
+.scroll-fade-in.visible {
+  animation-play-state: running;
+}
+
+/* تأثير نص العنوان الرئيسي */
+#Home h1 {
+  animation: fadeScale 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* تأثير النص التفاعلي */
+.text-Reg {
+  background: linear-gradient(45deg, #fff, #666);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #fff;
+  background-size: 200% 200%;
+  /* animation: gradientFlow 5s ease infinite; */
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3 {
+  opacity: 0;
+  animation: fadeScale 1s ease-out forwards;
+}
+
+.Navigation {
+  animation: slideInRight 1s ease-out;
+}
+/*
+.Logo img {
+  animation: floatAnimation 3s ease-in-out infinite;
+} */

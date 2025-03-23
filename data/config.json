@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project name",
+      "label": "Label",
+      "image": "./images/Frame 978.png",
+      "url": "project-url-1"
+    },
+    {
+      "id": 2,
+      "name": "Project name",
+      "label": "Label",
+      "image": "./images/Tarbosh-GoudyGhareb-01.jpg",
+      "url": "project-url-2"
+    },
+    {
+      "id": 3,
+      "name": "Project name",
+      "label": "Label",
+      "image": "./images/10.jpg",
+      "url": "project-url-3"
+    },
+    {
+      "id": 4,
+      "name": "Project name",
+      "label": "Label",
+      "image": "./images/6.jpg",
+      "url": "project-url-4"
+    }
+  ]
+}
