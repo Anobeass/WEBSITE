@@ -528,8 +528,21 @@ p{
     }
 
     .Auto-Layout-Horizontal {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .Auto-Layout-Horizontal > div {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .Auto-Layout-Horizontal p {
+        font-size: 14px;
+        text-align: left;
     }
 
     .Projects {
@@ -588,6 +601,133 @@ p{
         align-items: center;
         margin: 0 auto;
     }
+
+    .ex {
+        margin-left: 20px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .text-Reg {
+        font-size: 32px;
+        bottom: 60px;
+        padding: 0 20px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .seb {
+        height: 200px;
+    }
+
+    .testimonials-container {
+        padding: 0 10px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .quote-icon {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-position {
+        font-size: 12px;
+    }
+
+    /* تصحيح عرض الموقع */
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .container, section {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    /* تحسين عنوان Brand Designer */
+    h1 {
+        font-size: 64px;
+        line-height: 1.1;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        white-space: normal;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* إعادة تموضع زر Scroll */
+    .Auto-Layout-Vertical {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 160px;
+        height: 70px;
+        margin: 0;
+        left: auto;
+        bottom: auto;
+        background-color: rgba(249, 249, 249, 0.9);
+    }
+
+    /* تحسين شريط text-Reg */
+    .seb {
+        height: 120px;
+        margin: 40px 0;
+    }
+
+    .text-Reg {
+        font-size: 32px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        bottom: 0;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+    }
+
+    /* تحسين Testimonials */
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* تحسينات إضافية */
+    .Projects,
+    .Auto-Layout-Horizontal,
+    .ex-,
+    .fot {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -623,6 +763,44 @@ p{
 
     .social-link {
         font-size: 14px;
+    }
+
+    .Auto-Layout-Horizontal {
+        gap: 10px;
+    }
+
+    .Auto-Layout-Horizontal p {
+        font-size: 12px;
+    }
+
+    .text-Reg {
+        font-size: 24px;
+        bottom: 40px;
+    }
+
+    .testimonial-card {
+        padding: 12px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+
+    .seb {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .Auto-Layout-Vertical {
+        width: 140px;
+        height: 60px;
+    }
+
+    .text-Reg {
+        font-size: 28px;
     }
 }
 
@@ -780,5 +958,242 @@ p{
 
     .author-position {
         font-size: 14px;
+    }
+}
+
+/* تحديث التصميم المتجاوب للصفحة بالكامل */
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    h1 {
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    h1 {
+        font-size: 180px;
+        width: 90%;
+    }
+
+    .Auto-Layout-Horizontal {
+        width: 90%;
+        gap: 160px;
+    }
+
+    .Projects, .ex-, .testimonials-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 150px;
+        height: auto;
+    }
+
+    .Card-Element-desktop {
+        height: 400px;
+    }
+
+    .testimonials-container {
+        gap: 20px;
+    }
+
+    .text-Reg {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 120px;
+        margin: 40px auto;
+    }
+
+    .Auto-Layout-Vertical {
+        left: auto;
+        right: 40px;
+    }
+
+    .Auto-Layout-Horizontal {
+        gap: 80px;
+    }
+
+    .ex- {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ex1 {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    .Auto-Layout-Horizontal {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Pr-More {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .Card1 {
+        flex-direction: column;
+    }
+
+    .Card-Element-desktop {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+    }
+
+    .text-Reg {
+        font-size: 60px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Navigation {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .Auto-Layout-Vertical {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .bttn {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .fot {
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fot > div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .Navigation {
+        font-size: 16px;
+        gap: 8px;
+        height: 48px;
+    }
+
+    .Navigation li a {
+        width: 70px;
+        height: 38px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .Auto-Layout-Vertical {
+        width: 180px;
+        height: 70px;
+    }
+
+    .Card-Element-desktop {
+        height: 250px;
+    }
+
+    .ex1-1 .text {
+        font-size: 24px;
+    }
+
+    .ex-p {
+        font-size: 14px;
+    }
+
+    .Text {
+        font-size: 80px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .text-Reg {
+        font-size: 40px;
+    }
+
+    .Text {
+        font-size: 60px;
+    }
+
+    .social-link {
+        font-size: 14px;
+    }
+}
+
+/* تحسين تجربة المستخدم على الأجهزة اللمسية */
+@media (hover: none) {
+    .Card-Element-desktop:hover,
+    .testimonial-card:hover,
+    .Pr-More:hover {
+        transform: none;
+    }
+
+    .card-element:active,
+    .testimonial-card:active,
+    .Pr-More:active {
+        transform: scale(0.98);
+    }
+}
+
+/* تحسين الأداء على الشاشات عالية الدقة */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
     }
 }
