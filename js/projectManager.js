@@ -6,7 +6,7 @@ class ProjectManager {
 
     async loadProjects() {
         try {
-            const response = await fetch('../data/config.json');
+            const response = await fetch('./data/config.json');
             const data = await response.json();
             this.projects = data.projects;
             this.renderProjects();
@@ -64,7 +64,7 @@ class ProjectManager {
 
     async saveProjects() {
         try {
-            const response = await fetch('../data/config.json', {
+            const response = await fetch('./data/config.json', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

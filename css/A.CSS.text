@@ -1,0 +1,427 @@
+/* مقاس التابلت */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .Navigation {
+        width: 90%;
+        font-size: 16px;
+        height: 48px;
+    }
+
+    .Navigation li a {
+        width: 70px;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .Auto-Layout-Vertical {
+        position: static;
+        margin: 20px auto;
+        width: 180px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: none;
+    }
+
+    .Auto-Layout-Horizontal {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .Auto-Layout-Horizontal > div {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .Auto-Layout-Horizontal p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 129px;
+
+    }
+
+    .Pr-info {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .Pr-More {
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .Pr-More {
+        margin-top: 0;
+    }
+
+    .Pr-info {
+        text-align: center;
+    }
+
+    .Card1 {
+        flex-direction: column;
+        width: 100%; /* تقليل العرض في حجم الهاتف */
+        padding: 0 20px; /* إضافة حشوة لتجنب تداخل العناصر */
+        box-sizing: border-box;
+    }
+
+    .Card-Element-desktop {
+        height: 300px;
+        width: 351px;
+        margin-bottom: 20px;
+    }
+
+    .Text {
+        font-size: 60px;
+    }
+
+    .bttn {
+        width: 90%;
+        max-width: 362px;
+        margin: 40px auto;
+    }
+
+    .fot {
+        width: 90%;
+        margin: 40px auto;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .name {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .ex {
+        margin-left: 20px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .text-Reg {
+        font-size: 32px;
+        bottom: 60px;
+        padding: 0 20px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .seb {
+        height: 200px;
+    }
+
+    .testimonials-container {
+        padding: 0 10px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .quote-icon {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-position {
+        font-size: 12px;
+    }
+
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .container, section {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 1.1;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        white-space: normal;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .Auto-Layout-Vertical {
+        position: static;
+        margin: 20px auto;
+        width: 180px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seb {
+        height: 120px;
+        margin: 40px 0;
+    }
+
+    .text-Reg {
+        font-size: 32px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        bottom: 0;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Projects,
+    .Auto-Layout-Horizontal,
+    .ex-,
+    .fot {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+    /* .Header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff; /* يمكنك تغيير اللون حسب التصميم /
+    } */
+
+    #Home {
+        padding-top: 80px; /* إضافة مساحة لتجنب تداخل الهيدر */
+        text-align: center;
+    }
+
+    #projects-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .Navigation {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .Projects h2 {
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .pa- {
+        font-size: 18px;
+        margin-left: 0;
+    }
+.ex{
+    border: 2px solid black;
+}
+    .ex-p {
+        font-size: 14px;
+    }
+
+    .Text {
+        font-size: 40px;
+    }
+
+    .social-link {
+        font-size: 14px;
+    }
+
+    .Auto-Layout-Horizontal {
+        gap: 10px;
+    }
+
+    .Auto-Layout-Horizontal p {
+        font-size: 12px;
+    }
+
+    .text-Reg {
+        font-size: 24px;
+        bottom: 40px;
+    }
+
+    .testimonial-card {
+        padding: 12px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+
+    .seb {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .Auto-Layout-Vertical {
+        position: static;
+        margin: 20px auto;
+        /* width: 140px;
+        height: 60px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .text-Reg {
+        font-size: 28px;
+    }
+
+    .Projects {
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 129px;
+
+    }
+
+    .Card1 {
+        width: 100%; /* تقليل العرض في حجم الهاتف */
+        padding: 0 0px; /* إضافة حشوة لتجنب تداخل العناصر */
+        box-sizing: border-box;
+    }
+
+    /* .Header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff; /* يمكنك تغيير اللون حسب التصميم */
+    */
+
+    #Home {
+        padding-top: 80px; /* إضافة مساحة لتجنب تداخل الهيدر */
+        text-align: center;
+    }
+
+    #projects-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* @media screen and (max-width: 576px) {
+    h1 {
+        font-size: 82px;
+    }
+
+    /* .Header {
+        position: sticky;
+
+    } /
+
+    .Navigation {
+        font-size: 16px;
+        gap: 1px;
+        height: 48px;
+    }
+
+    .Navigation li a {
+        width: 70px;
+        height: 38px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .Auto-Layout-Vertical {
+        width: 180px;
+        height: 70px;
+        animation: floatAnimation 0s ease-in-out infinite;
+        z-index: 1000;
+    }
+
+    .Card-Element-desktop {
+        height: 250px;
+        width: 351px;
+
+    }
+
+    .ex1-1 .text {
+        font-size: 24px;
+    }
+
+    .ex-p {
+        font-size: 14px;
+    }
+
+    .Text {
+        font-size: 80px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+    }
+} */
