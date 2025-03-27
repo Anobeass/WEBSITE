@@ -18,6 +18,14 @@
 
 </head>
 <body>
+    <div id="pageLoader">
+        <div class="loader-spinner"></div>
+        <!-- <div class="loader-progress">
+            <div class="loader-progress-fill" style="width: 0%"></div>
+        </div> -->
+    </div>
+
+    <div id="mainContent">
   <div class="Logo">
     <img src="images/Logo.png" alt="" id="logo"
     style="  width: 60px;
@@ -59,8 +67,8 @@
           <i class="fa-solid fa-arrow-right" id="ar"></i>
       </a>
     </div>
-    <div id="projects-container">
-        <!-- Projects will be loaded here dynamically -->
+    <div id="projects-container" class="projects-grid">
+        <!-- المشاريع سيتم تحميلها هنا -->
     </div>
 </section>
   <section id="About" class="scroll-fade-in">
@@ -181,6 +189,9 @@
   </div>
 </div>
 </section >
+<div class="scroll-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
@@ -225,6 +236,26 @@
         //     url: "new-project-url"
         // });
     });
+    const scrollButton = document.querySelector('.scroll-to-top');
+
+    // إظهار/إخفاء الزر بناءً على موقع التمرير
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollButton.classList.add('visible');
+        } else {
+            scrollButton.classList.remove('visible');
+        }
+    });
+
+    // التمرير السلس إلى أعلى الصفحة
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 </script>
+<script src="./js/autoPip.js"></script>
+<script src="./js/pageLoader.js"></script>
 </body>
 </html>

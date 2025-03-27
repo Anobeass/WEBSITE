@@ -2,16 +2,61 @@ class ProjectManager {
     constructor() {
         this.projects = [];
         this.container = document.getElementById('projects-container');
+        this.initLoader();
+    }
+
+    initLoader() {
+        const loaderHTML = `
+            <div class="loader-container">
+                <div class="loader"></div>
+                <div class="loading-text">Loading</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', loaderHTML);
+        this.loader = document.querySelector('.loader-container');
+        this.progressBar = document.querySelector('.progress-bar-fill');
+    }
+
+    updateProgress(progress) {
+        if (this.progressBar) {
+            this.progressBar.style.width = `${progress}%`;
+        }
+    }
+
+    async showLoader() {
+        this.loader.classList.remove('fade-out');
+        // محاكاة تقدم التحميل
+        for (let i = 0; i <= 100; i += 20) {
+            await new Promise(resolve => setTimeout(resolve, 300));
+            this.updateProgress(i);
+        }
+    }
+
+    hideLoader() {
+        this.updateProgress(100);
+        setTimeout(() => {
+            this.loader.classList.add('fade-out');
+            setTimeout(() => {
+                this.loader.style.display = 'none';
+            }, 600);
+        }, 400);
     }
 
     async loadProjects() {
         try {
+            await this.showLoader();
             const response = await fetch('./data/config.json');
             const data = await response.json();
             this.projects = data.projects;
             this.renderProjects();
         } catch (error) {
             console.error('Error loading projects:', error);
+            // إظهار رسالة خطأ للمستخدم هنا إذا لزم الأمر
+        } finally {
+            this.hideLoader();
         }
     }
 
