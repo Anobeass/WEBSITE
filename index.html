@@ -249,6 +249,16 @@
         });
     });
 </script>
+  <script>
+  document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+});
+document.addEventListener("keydown", function(event) {
+    if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+        event.preventDefault();
+    }
+});
+</script>
 <script src="./js/autoPip.js"></script>
 <script src="./js/pageLoader.js"></script>
 </body>
