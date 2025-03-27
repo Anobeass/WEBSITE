@@ -2,31 +2,31 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project name",
-      "label": "Label",
-      "image": "./images/Frame 978.png",
-      "url": "project-url-1"
+      "name": "Portfolio 2025",
+      "label": "MY Portfolio",
+      "image": "./images/Frame 978.jpg",
+      "url": "https://www.behance.net/gallery/219169569/Goudy-Gareb-Book-Cover-Visual-Identity-Designer"
     },
     {
       "id": 2,
-      "name": "Project name",
-      "label": "Label",
+      "name": "طربوش – هوية بصرية لمحل حلويات شرقية",
+      "label": "Visual identity design",
       "image": "./images/Tarbosh-GoudyGhareb-01.jpg",
-      "url": "project-url-2"
+      "url": "https://www.behance.net/gallery/221930641/_"
     },
     {
       "id": 3,
-      "name": "Project name",
-      "label": "Label",
+      "name": "قصة السيدة جميلة ",
+      "label": "Book Cover Design",
       "image": "./images/10.jpg",
-      "url": "project-url-3"
+      "url": "https://www.behance.net/gallery/218125977/-Book-Cover-Design"
     },
     {
       "id": 4,
-      "name": "Project name",
-      "label": "Label",
+      "name": "سر السيد ميخائيل ",
+      "label": "Book Cover Design",
       "image": "./images/6.jpg",
-      "url": "project-url-4"
+      "url": "https://www.behance.net/gallery/218326903/-Book-Cover-Design"
     }
   ]
 }
