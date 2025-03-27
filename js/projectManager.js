@@ -36,7 +36,7 @@ class ProjectManager {
         return `
             <a href="${project.url}" class="card-element scroll-fade-in">
                 <div class="Card-Element-desktop">
-                    <img src="${project.image}" loading="lazy" alt="${project.name}">
+                    <img src="${project.image}" alt="${project.name}">
                 </div>
                 <div class="Frame6">
                     <h5>${project.name}</h5>
